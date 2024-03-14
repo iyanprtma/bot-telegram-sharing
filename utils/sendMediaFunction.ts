@@ -15,6 +15,9 @@ async function sendMediaFunction(ctx: Context, file: any) {
   if (type === "documents") {
     return await ctx.replyWithDocument(fileId);
   }
+  if (type === "documents") {
+    return await ctx.replyWithDocument(fileId);
+  }
 
   throw Error("Type not found");
 }
